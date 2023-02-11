@@ -1,0 +1,18 @@
+server:
+  port: 7992
+  servlet:
+    context-path: /
+    
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myalarm?serverTimezone=Asia/Seoul
+    username: alarm
+    password: qwe123!
+    
+mybatis:
+  mapper-locations: mapper/*.xml
